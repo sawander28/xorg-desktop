@@ -32,6 +32,6 @@ done
 
 
 
-exec xterm -geometry 80x66+0+0 -name login
+#exec xterm -geometry 80x66+0+0 -name login
 
-#exec fluxbox
+exec fluxbox
