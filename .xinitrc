@@ -1,37 +1,28 @@
-# .xinitrc
+#!/bin/sh
 
-export QT_QPA_PLATFORM=xcb
+[ -d /etc/X11/xinit/xinitrc.d ] && \
+	for f in /etc/X11/xinit/xinitrc.d/*; do [ -x "$f" ] && . "$f"; done && unset f
 
-setxkbmap de -variant pc-105
+#[ -r .local/share/backgrounds/default ] && \
+#	feh --bg-fill --no-fehbg ~/.wallpaper/default || \
+#	feh --recursive --randomize --bg-fill --no-fehbg ~/.wallpaper
 
 setxkbmap \
-  -model ${XKBMODEL:-"pc105"} \
-  -layout ${XKBLAYOUT:-"de"} \
-  -variant ${XKBVARIANT:-"nodeadkeys"} \
-  -option terminatr:ctrl_alt_bksp
+    -layout 'de(nodeadkeys)' \
+	-option 'terminate:ctrl_alt_bksp'
 
-xsetroot -cursor_name plan9
+if [ "$(command -v uim-xim >/dev/null >&2)" ]; then
+	export GTK_IM_MODULE="uim"
+	export QT_IM_MODULE="uim"
+	export XMODIFIERS="@im=uim"
+fi
 
-xset +fp /usr/share/fonts/cantarell
-xset +fp ~/.local/share/fonts/Terminus
+xrdb -merge ~/.config/xorg/Xresources
+xset b off
 
-# mouse fast
-xset m 4 2
+xinput --set-prop 'Razer Razer Salmosa' 'libinput Accel Speed' -0.7 >/dev/null 2>&1
 
-# no screensaver
-xset s off
-xset -dpms
+sct 4400 2>&- || : # color temperature
 
-fbsetbg -A ~/.local/share/backgrounds/fluxbox
-
-[ -r ~/.Xresources ] && xrdb -merge ~/.Xresources
-
-for f in ~/.xinitrc.d/* ; do
-  "$f"
-done
-
-
-
-#exec xterm -geometry 80x66+0+0 -name login
-
-exec fluxbox
+#exec dbus-launch --exit-with-session runsvdir -P ~/service
+exec i3

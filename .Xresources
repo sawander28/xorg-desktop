@@ -52,7 +52,7 @@
 !*font:     		-misc-fixed-medium-r-normal-*-*-140-*-*-c-*-iso8859-15
 
 XTerm*faceName:     Terminus
-XTerm*faceSize:     11
+XTerm*faceSize:     16
 XTerm*font2:		-misc-fixed-medium-r-normal-*-*-70-*-*-c-*-iso8859-15
 XTerm*font3:     	-misc-fixed-medium-r-normal-*-*-100-*-*-c-*-iso8859-15
 XTerm*font4:     	-misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-15
@@ -61,7 +61,7 @@ XTerm*font5:     	-misc-fixed-medium-r-normal-*-*-140-*-*-c-*-iso8859-15
 XTerm*utf8: 1
 
 UXTerm*faceName:     Terminus
-UXTerm*faceSize:     11
+UXTerm*faceSize:     16
 UXTerm*font1:           -misc-fixed-*-*-*-*-6-*-*-*-*-*-iso10646-*
 UXTerm*font2:           -misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
 UXTerm*font3:           -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1

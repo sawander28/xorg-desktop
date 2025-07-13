@@ -1,0 +1,44 @@
+# Set default Xft(3) font
+fontname "monospace:pixelsize=12:bold"
+
+# Turn on sticky-group mode
+sticky yes
+
+# Any entry here is shown in the application menu
+bind-key 4-Return alacritty
+bind-key 4-d       dmenu_run
+bind-key CS-Return xterm --geometry 90x28
+bind-key CS-e      mousepad
+bind-key CS-f      thunar
+bind-key CS-b      firefox
+bind-key CS-t      xfce4-taskmanager
+bind-key CS-e      reload
+
+# Autogroup definitions
+autogroup 3 "mpd,ympd,mpv,mpc,ncmpcpp,pipewire,pipewire-pulse,wireplumber,pulseaudio"
+autogroup 3 "xterm,UXTerm,urxvt-unicode,"
+
+ignore xclock
+ignore xapm
+ignore xwi
+
+# menu
+command xterm     xterm
+command alacritty alacritty
+command thunar    thunar
+command mousepad  mousepad
+command firefox   firefox
+
+# key-bindings
+bind key 4-h      window-move-left
+bind-key 4-j      window-move-down
+bind-key 4-k      window-move-up
+bind-key 4-l      window-move-right
+bind-key 4-Left   window-move-left
+bind-key 4-Down   window-move-down
+bind-key 4-Up     window-move-up
+bind-key 4-Right  window-move-right
+
+# mouse-bindings
+bind-mouse M-2    window-lower
+bind-mouse M-3    window-resize

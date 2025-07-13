@@ -1,0 +1,82 @@
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+Xcursor.theme: plan9
+
+XTerm*faceName:     Terminus
+XTerm*faceSize:     14
+XTerm*font2:		-misc-fixed-medium-r-normal-*-*-70-*-*-c-*-iso8859-15
+XTerm*font3:     	-misc-fixed-medium-r-normal-*-*-100-*-*-c-*-iso8859-15
+XTerm*font4:     	-misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-15
+XTerm*font5:     	-misc-fixed-medium-r-normal-*-*-140-*-*-c-*-iso8859-15
+
+XTerm*utf8: 1
+
+UXTerm*faceName:     Terminus
+UXTerm*faceSize:     14
+UXTerm*font1:           -misc-fixed-*-*-*-*-6-*-*-*-*-*-iso10646-*
+UXTerm*font2:           -misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
+UXTerm*font3:           -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+UXTerm*font4:           -misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+UXTerm*font5:           -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+UXTerm*font6:           -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+UXTerm*utf8Fonts.font:          -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+UXTerm*utf8Fonts.wideFont:      -misc-fixed-medium-r-normal-ko-18-120-100-100-c-180-iso10646-1
+
+UXTerm*allowFontOps: true
+
+! enable UTF8
+! XTerm*utf8: 0
+! start via xterm -class UXTerm or 'uxterm'
+UXTerm*utf8: 1
+UXTerm*eightBitInput: false
+UXTerm*metaSendsEscape: true
+
+XTerm*cursorColor: orange
+XTerm*borderColor: white
+XTerm*scrollColor: black
+XTerm*loginShell: true
+XTerm*visualBell: true
+XTerm*saveLines:  8192
+XTerm*shading: 80
+
+XTerm*allowFontOps:    true
+XTerm*allowSendEvents: true
+XTerm*internalBorder:  0
+XTerm*borderWidth:     0
+XTerm*multiScroll:     true
+XTerm*utmpInhibit:     false
+XTerm*jumpScroll:      true
+XTerm*waitForMap:      true
+XTerm*scrollBar:       false
+!XTerm*title:           h
+
+!! Fix the Alt-p is wacko char problem.
+XTerm*eightBitInput:  false
+XTerm*metaSendsEscape: true
+
+! Based on Tomorrow Theme
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  orange
+*.color0:       #000000
+*.color1:       #912226
+*.color2:       #778900
+*.color3:       #ae7b00
+*.color4:       #1d2594
+*.color5:       #682a9b
+*.color6:       #2b6651
+*.color7:       #929593
+*.color8:       #666666
+*.color9:       #cc6666
+*.color10:      #b5bd68
+*.color11:      #f0c674
+*.color12:      #81a2be
+*.color13:      #b294bb
+*.color14:      #8abeb7
+*.color15:      #ecebec

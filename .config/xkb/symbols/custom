@@ -1,0 +1,10 @@
+~/.config/xkb/symbols/custom
+
+xkb_symbols "basic" {
+    include "de"
+    name[Group1]= "German";
+    key <CAPS> { [ Hyper_L ] };
+    modifier_map Mod4 { Hyper_L };
+    key <LWIN> { [ Super_L ] };
+    modifier_map Mod5 { Super_L };
+};
