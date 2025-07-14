@@ -1,1 +1,1 @@
-## Xorg desktop configs
+# Xorg XServer config files
