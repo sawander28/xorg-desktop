@@ -7,9 +7,11 @@
 #	feh --bg-fill --no-fehbg ~/.wallpaper/default || \
 #	feh --recursive --randomize --bg-fill --no-fehbg ~/.wallpaper
 
-setxkbmap \
-    -layout 'de(nodeadkeys)' \
-	-option 'terminate:ctrl_alt_bksp'
+#setxkbmap \
+#    -layout 'us(altgr-intl),de(nodeadkeys)' \
+#	-option 'grp:shifts_toggle,compose:menu,terminate:ctrl_alt_bksp'
+
+#xmodmap ~/.config/xorg/us-intl-german.xmodmap
 
 if [ "$(command -v uim-xim >/dev/null >&2)" ]; then
 	export GTK_IM_MODULE="uim"
