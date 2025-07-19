@@ -23,8 +23,10 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Shift+Return exec mousepad
 bindsym Ctrl+Shift+Return exec Thunar
+bindsym $mod+t exec xfce4-taskmanager
+bindsym $mod+b exec firefox
 
 # kill focused window
 bindsym $mod+Shift+q kill
