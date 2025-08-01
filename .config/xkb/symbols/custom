@@ -1,4 +1,4 @@
-~/.config/xkb/symbols/custom
+# ~/.config/xkb/symbols/custom
 
 xkb_symbols "basic" {
     include "de"
