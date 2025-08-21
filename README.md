@@ -1,1 +1,2 @@
-i3 tiling WM & Xorg-Server
+- i3 tiling, cwm & fluxbox WMs
+- Xorg-Server
