@@ -1,1 +1,1 @@
-# Xorg XServer config files
+i3 tiling WM & Xorg-Server
